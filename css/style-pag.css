@@ -1,0 +1,94 @@
+/* codigo de pagina de animaciones */
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg-register.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(20,20,20);
+}
+
+header{
+    height: 1.5rem;
+    padding: 1rem;
+}
+
+header .logo{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+header .logo:hover{
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+main{
+    height: 100%;
+    width: 30%;
+    padding: 2.5rem 1.25rem;
+    margin: 0 auto;
+    background-color: rgb(52, 50, 50);
+    background-size: cover;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h2{
+    color: white;
+    font-size: 2.5rem;
+}
+
+form input, form select{
+    width: 100%;
+    height: 2.5rem;
+    margin: 0.5rem auto;
+    border-radius: 5rem;
+    font-size: 1.25rem;
+    border: 2px solid rgb(160,55,70);
+    background-color: rgb(52, 50, 50);
+    color: white;
+    align-items: center;
+    padding-left: 20px;
+}
+.checkbox{
+    width: 20%;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.checkbox-text{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.empty-text{
+    color: red;
+    font-size: 1rem;
+    opacity: 0;
+}
+
+.boton{
+    width: 100%;
+    color: white;
+    background-color: rgb(160,55,70);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.ayuda{
+    text-decoration: none;
+    color: gray;
+    font-size: 1rem;
+}

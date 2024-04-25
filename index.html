@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC-MOVIES</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bc7b957f26.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/clapperboard.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" target="_self" class="logo">
+                <i class="fa fa-film" aria-hidden="true"></i>
+                <span>CAC-Movies</span>
+            </a>
+            <ul>
+                <li><a href="#tendencias">Tendencias</a></li>
+                <li><a href="registro.html" target="_self">Registrarse</a></li>
+                <li><a class="navEsp" href="login.html" target="_self">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main  id="inicio">
+        <section class="section1" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>
+                Películas y series ilimitadas
+                <br>
+                en un solo lugar
+            </h1>
+            <h3>
+                Disfruta donde quieras.
+                <br>
+                Cancela en cualquier momento.
+            </h3>
+            <a href="registro.html" class="main-reg">Registrate</a>
+        </section>
+        <section class="section2" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1500" >
+            <h2>
+                ¿Qué estas buscando para ver?
+            </h2>
+            <form>
+                <input type="text" id="buscar" class="inputBuscar" placeholder="Buscar..." name="buscar">
+                <input type="submit" class="botonBuscar" value="Buscar">
+            </form>
+        </section>
+        <hr id="tendencias">
+        <section class="section3" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1500">
+            <h2>Las tendencias de hoy</h2>
+            <div class="peliculas">
+                <!-- peliculas-->
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/mario.jpg" alt="imagen mario bros pelicula">
+                        <h4 class="tituloPeli">
+                            The Super Mario Bros
+                        </h4>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/dune.jpg" alt="imagen duna pelicula">
+                        <h4 class="tituloPeli">
+                            Dune: Part Two
+                        </h4>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/gk.jpg" alt="imagen godzilla vs kong pelicula">
+                        <h4 class="tituloPeli">
+                            Godzilla x kong
+                        </h4>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/kunfu.jpg" alt="imagen kunfupanda pelicula">
+                        <h4 class="tituloPeli">
+                            Kunfu Panda 4
+                        </h4>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/mario.jpg" alt="imagen mario bros pelicula">
+                        <h4 class="tituloPeli">
+                            The Super Mario Bros
+                        </h4>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/dune.jpg" alt="imagen duna pelicula">
+                        <h4 class="tituloPeli">
+                            Dune: Part Two
+                        </h4>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/gk.jpg" alt="imagen godzilla vs kong pelicula">
+                        <h4 class="tituloPeli">
+                            Godzilla x kong
+                        </h4>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/kunfu.jpg" alt="imagen kunfupanda pelicula">
+                        <h4 class="tituloPeli">
+                            Kunfu Panda 4
+                        </h4>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/mario.jpg" alt="imagen mario bros pelicula">
+                        <h4 class="tituloPeli">
+                            The Super Mario Bros
+                        </h4>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/dune.jpg" alt="imagen duna pelicula">
+                        <h4 class="tituloPeli">
+                            Dune: Part Two
+                        </h4>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/gk.jpg" alt="imagen godzilla vs kong pelicula">
+                        <h4 class="tituloPeli">
+                            Godzilla x kong
+                        </h4>
+                    </a>
+                </div>
+                <div class="pelicula">
+                    <a href="peliculas.html">
+                        <img src="img/kunfu.jpg" alt="imagen kunfupanda pelicula">
+                        <h4 class="tituloPeli">
+                            Kunfu Panda 4
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <button class="cambioPag">Anterior</button>
+            <button class="cambioPag">Siguiente</button>
+        </section>
+        <hr>
+        <section class="section4" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1500">
+            <h3>Las más aclamadas</h3>
+            <!--peliculas mas aclamadas-->
+            <div class="peliculas1">
+                <div class="pelicula1">
+                    <img src="img/mario.jpg" alt="imagen mario bros pelicula">
+                </div>
+                <div class="pelicula1">
+                    <img src="img/dune.jpg" alt="imagen duna pelicula">
+                </div>
+                <div class="pelicula1">
+                    <img src="img/gk.jpg" alt="imagen godzilla x kong pelicula">
+                </div>
+                <div class="pelicula1">
+                    <img src="img/kunfu.jpg" alt="imagen kunfupanda 4 pelicula">
+                </div>
+                <div class="pelicula1">
+                    <img src="img/mario.jpg" alt="imagen mario bros pelicula">
+                </div>
+                <div class="pelicula1">
+                    <img src="img/dune.jpg" alt="imagen duna pelicula">
+                </div>
+                <div class="pelicula1">
+                    <img src="img/gk.jpg" alt="imagen godzilla x kong pelicula">
+                </div>
+                <div class="pelicula1">
+                    <img src="img/kunfu.jpg" alt="imagen kunfupanda 4 pelicula">
+                </div>
+            </div>    
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" target="_self">Términos y condiciones</a>
+                </li>
+                <li>
+                    <a href="index.html" target="_self">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="index.html" target="_self">Ayuda</a>
+                </li>
+                <li class="navEsp">
+                    <a href="index.html" target="_self">Administrador Peliculas</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#inicio">
+            <img src="img/flecha-hacia-arriba.png" alt="Ir arriba" class="arriba">
+        </a>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

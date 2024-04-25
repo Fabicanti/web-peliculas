@@ -1,0 +1,367 @@
+/* codigo de pagina de animaciones */
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+body{
+    background-color: rgb(20, 20, 20);
+}
+hr{
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/*estilos del header */
+header{
+    background-color: rgb(160,55,70);
+    color: white;
+    height: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    padding: 0.5rem 0;
+}
+
+nav a{
+    margin-top: 1rem;
+}
+
+nav .logo{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+nav .logo:hover{
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin-right: 1.5rem;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: transform 0.1s, box-shadow 0.1s;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover{
+    transform: scale(0.95);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+}
+
+.navEsp{
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+}
+.navEsp:hover{
+    background-color: rgb(160,55,70);
+}
+
+/*estilos del main */
+
+.section1{
+    color:white;
+    background:linear-gradient(to right top, #0000008a, #0000008a), url(../img/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+main h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.main-reg{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(160,55,70);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+.main-reg:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+}
+.section2{
+    color: white;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section2 h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.section2 form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.inputBuscar{
+    color: black;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 1.5rem;
+    height: 3rem;
+    width: 30rem;
+    margin: 1rem 0px;
+    padding: 0px 1rem;
+    outline: none;
+}
+.botonBuscar{
+    color: white;
+    background-color: rgb(160,55,70);
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 1.5rem;
+    height: 3rem;
+    margin: 1rem 0.5rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+.botonBuscar:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+}
+.section3{
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.section3 h2{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.peliculas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.peliculas a{
+    text-decoration: none;
+    color: white;
+}
+.pelicula{
+    width: 12rem;
+    height: 18rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.pelicula img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+.tituloPeli{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    max-width: 15rem;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+}
+.pelicula:hover{
+    box-shadow: 0 0 30px rgb(160,55,70);
+    transform: scale(0.9);
+}
+.tituloPeli:hover{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.cambioPag{
+    color: white;
+    background-color: rgb(160,55,70);
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin: 3rem 1rem;
+    padding: 1rem 1rem;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+.cambioPag:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+}
+.section4{
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: 2rem auto 4rem;
+}
+.section4 h3{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.peliculas1{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 2.5rem 0;
+}
+.pelicula1{
+    width: 10rem;
+    min-width: 10rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.pelicula1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+/* estilos del footer */
+footer{
+    color: white;
+    background-color: rgb(160,55,70);
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .navEsp{
+    padding: 0.5rem 1rem;
+}
+.arriba{
+    position: fixed;
+    z-index: 2;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+/*estilos medias query para pantallas >=768px */
+@media only screen and (max-width: 768px) {
+    /* header */
+    header{
+        height: 8rem;
+    }
+    nav{
+        margin-left: 0.6rem;
+        margin-right: 0.6rem;
+        flex-direction: column;
+        row-gap: 1.2rem;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    nav ul li a{
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    /*main */
+    main h1{
+        font-size: 2rem;
+    }
+    main h3{
+        font-size: 1rem;
+    }
+    .main-reg{
+        padding: 0.6rem 1.2rem;
+    }
+    .section2 h2{
+        font-size: 1.75rem;
+    }
+    .inputBuscar{
+        height: 2.5rem;
+        width: 18rem;
+    }
+    .section3 h2{
+        font-size: 1.75rem;
+        margin-bottom: 2.5rem;
+    }
+    .peliculas{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pelicula{
+        width: 20rem;
+        height: 30rem;
+    }
+    .cambioPag{
+        font-size: 0.5;
+    }
+    .section4 h3{
+        font-size: 1.75rem;
+    }
+    .pelicula1{
+        width: 8rem;
+        min-width: 8rem;
+        margin-left: 1.2rem;
+    }
+    /* footer */
+    footer{
+        height: 11rem;
+    }
+    footer nav ul{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+
