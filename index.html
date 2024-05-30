@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="img/clapperboard.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -52,137 +53,16 @@
         <hr id="tendencias">
         <section class="section3" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1500">
             <h2>Las tendencias de hoy</h2>
-            <div class="peliculas">
-                <!-- peliculas-->
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/mario.jpg" alt="imagen mario bros pelicula">
-                        <h4 class="tituloPeli">
-                            The Super Mario Bros
-                        </h4>
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/dune.jpg" alt="imagen duna pelicula">
-                        <h4 class="tituloPeli">
-                            Dune: Part Two
-                        </h4>
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/gk.jpg" alt="imagen godzilla vs kong pelicula">
-                        <h4 class="tituloPeli">
-                            Godzilla x kong
-                        </h4>
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/kunfu.jpg" alt="imagen kunfupanda pelicula">
-                        <h4 class="tituloPeli">
-                            Kunfu Panda 4
-                        </h4>
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/mario.jpg" alt="imagen mario bros pelicula">
-                        <h4 class="tituloPeli">
-                            The Super Mario Bros
-                        </h4>
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/dune.jpg" alt="imagen duna pelicula">
-                        <h4 class="tituloPeli">
-                            Dune: Part Two
-                        </h4>
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/gk.jpg" alt="imagen godzilla vs kong pelicula">
-                        <h4 class="tituloPeli">
-                            Godzilla x kong
-                        </h4>
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/kunfu.jpg" alt="imagen kunfupanda pelicula">
-                        <h4 class="tituloPeli">
-                            Kunfu Panda 4
-                        </h4>
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/mario.jpg" alt="imagen mario bros pelicula">
-                        <h4 class="tituloPeli">
-                            The Super Mario Bros
-                        </h4>
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/dune.jpg" alt="imagen duna pelicula">
-                        <h4 class="tituloPeli">
-                            Dune: Part Two
-                        </h4>
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/gk.jpg" alt="imagen godzilla vs kong pelicula">
-                        <h4 class="tituloPeli">
-                            Godzilla x kong
-                        </h4>
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="peliculas.html">
-                        <img src="img/kunfu.jpg" alt="imagen kunfupanda pelicula">
-                        <h4 class="tituloPeli">
-                            Kunfu Panda 4
-                        </h4>
-                    </a>
-                </div>
-            </div>
-            <button class="cambioPag">Anterior</button>
-            <button class="cambioPag">Siguiente</button>
+            <div id="pelis-container" class="peliculas">
+            </div> 
+            <button id="btn-ant" class="cambioPag">Anterior</button>
+            <button id="btn-sig" class="cambioPag">Siguiente</button>
         </section>
         <hr>
         <section class="section4" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1500">
             <h3>Las más aclamadas</h3>
             <!--peliculas mas aclamadas-->
-            <div class="peliculas1">
-                <div class="pelicula1">
-                    <img src="img/mario.jpg" alt="imagen mario bros pelicula">
-                </div>
-                <div class="pelicula1">
-                    <img src="img/dune.jpg" alt="imagen duna pelicula">
-                </div>
-                <div class="pelicula1">
-                    <img src="img/gk.jpg" alt="imagen godzilla x kong pelicula">
-                </div>
-                <div class="pelicula1">
-                    <img src="img/kunfu.jpg" alt="imagen kunfupanda 4 pelicula">
-                </div>
-                <div class="pelicula1">
-                    <img src="img/mario.jpg" alt="imagen mario bros pelicula">
-                </div>
-                <div class="pelicula1">
-                    <img src="img/dune.jpg" alt="imagen duna pelicula">
-                </div>
-                <div class="pelicula1">
-                    <img src="img/gk.jpg" alt="imagen godzilla x kong pelicula">
-                </div>
-                <div class="pelicula1">
-                    <img src="img/kunfu.jpg" alt="imagen kunfupanda 4 pelicula">
-                </div>
+            <div id="pelis-aclamadas" class="peliculas1">
             </div>    
         </section>
     </main>
@@ -207,6 +87,7 @@
             <img src="img/flecha-hacia-arriba.png" alt="Ir arriba" class="arriba">
         </a>
     </footer>
+    <script src="index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
