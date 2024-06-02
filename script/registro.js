@@ -11,6 +11,7 @@ const submitR = document.getElementById("submitR")
 submitR.addEventListener("click", function(e) {
     e.preventDefault();
     let empty = false;
+    
     nombre.nextElementSibling.classList.remove('error-text');
     apellido.nextElementSibling.classList.remove('error-text');
     email.nextElementSibling.classList.remove('error-text');
